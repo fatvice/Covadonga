@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<monthly>
+	<event>
+		<id>1</id>
+		<name>Reunión comité</name>
+		<startdate>2021-8-5</startdate>
+		<enddate>2021-8-5</enddate>
+		<starttime>14:00</starttime>
+		<endtime>20:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+	<event>
+		<id>2</id>
+		<name>Junta mensual con el administrador</name>
+		<startdate>2021-8-30</startdate>
+		<enddate>2021-8-30</enddate>
+		<starttime>14:00</starttime>
+		<endtime>20:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+	<event>
+		<id>3</id>
+		<name>Celebración fiestas patrias</name>
+		<startdate>2021-9-18</startdate>
+		<enddate>2021-9-18</enddate>
+		<starttime>12:00</starttime>
+		<endtime>20:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+	<event>
+		<id>4</id>
+		<name>Reunión por zoom</name>
+		<startdate>2021-8-20</startdate>
+		<enddate>2021-8-20</enddate>
+		<starttime>10:00</starttime>
+		<endtime>11:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+	<event>
+		<id>5</id>
+		<name>Entrega trabajo web</name>
+		<startdate>2021-8-9</startdate>
+		<enddate>2021-8-9</enddate>
+		<starttime>00:00</starttime>
+		<endtime>23:59</endtime>
+		<color>#0ccf50</color>
+		<url>https://aula.usm.cl</url>
+	</event>
+	<event>
+		<id>6</id>
+		<name>NO ABRIR Y CLICKEAR ESTE EVENTO</name>
+		<startdate>2021-8-22</startdate>
+		<enddate>2021-8-28</enddate>
+		<starttime>00:00</starttime>
+		<endtime>23:59</endtime>
+		<color>#ff0000</color>
+		<url>https://www.facebook.com/sebifrost</url>
+	</event>
+	
+</monthly>

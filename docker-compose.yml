@@ -1,0 +1,35 @@
+version: "3.9"
+services:
+  db:
+    container_name: db-covadonga
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db-data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: covadonga_db
+      MYSQL_USER: covadonga
+      MYSQL_PASSWORD: covadonga1234
+    networks:
+      - net-covadonga
+  web:
+    container_name: covadonga-web
+    depends_on:
+      - db
+    ports:
+      - "8082:80"
+    volumes:
+      - "./web:/var/www/html"
+      - "./httpd.conf:/etc/httpd/conf/httpd.conf"
+    image: laravel-covadonga
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - net-covadonga
+networks:
+  net-covadonga:
+    

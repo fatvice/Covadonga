@@ -1,0 +1,12 @@
+.logo{
+    /*Siempre que quieras que una imagen sea responsiva
+    solo defines una dimension, el ancho o el alto.
+    Si defines alto, el ancho es automatico y viceversa
+    */
+    height:70px;
+    width: auto;
+}
+.logo-usm{
+    height:70px;
+    width:auto;
+}
