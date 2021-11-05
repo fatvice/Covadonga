@@ -18,7 +18,14 @@
                 </div>
                 <div class="mb-3">
                     <label for="pass-txt" class="form-label">Contraseña</label>
-                    <input type="text" id="pass-txt" class="form-control">
+                    <div class="input-group">
+                        <input type="password" id="pass-txt" class="form-control">
+                        <button class="btn btn-outline-secondary" type="button" id="pass-btn">Mostrar Contraseña</button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmpass-txt" class="form-label">Confirme contraseña</label>
+                    <input type="password" id="confirmpass-txt" placeholder="Ingrese nuevamente su contraseña" class="form-control">
                 </div>
                 <div class="mb-3">
                     <label for="estacionamiento-txt" class="form-label">Estacionamiento</label>

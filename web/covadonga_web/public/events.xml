@@ -60,5 +60,14 @@
 		<color>#ff0000</color>
 		<url>https://www.facebook.com/sebifrost</url>
 	</event>
+		<event>
+		<id>7</id>
+		<name>Despedida de soltera del 903</name>
+		<startdate>2021-10-31</startdate>
+		<enddate>2021-10-31</enddate>
+		<starttime>20:00</starttime>
+		<endtime>00:00</endtime>
+		<color>#000000</color>
+	</event>
 	
 </monthly>

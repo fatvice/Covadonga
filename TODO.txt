@@ -1,0 +1,3 @@
+Hacer confirmación de contraseña
+Ver los fondos de eventos
+Hacer filtros para ver_trabajadores y ver_usuarios

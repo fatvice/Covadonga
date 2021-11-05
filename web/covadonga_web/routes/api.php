@@ -19,14 +19,14 @@ use App\Http\Controllers\UsuariosController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 //RUTAS DEUDAS
 Route::get("deudas/get",[DeudasController::class,"getDeudas"]);
 Route::get("deudas/getByUsuario",[DeudasController::class,"getDeudasByUsuario"]);
-Route::get("deudas/findByCodDeuda",[DeudasController::class,"obtenerPorCodDeuda"]);
+Route::get("deudas/findByCodDeuda",[DeudasController::class,"obtenerPsorCodDeuda"]);
 Route::post("deudas/post",[DeudasController::class,"crearDeuda"]);
 Route::post("deudas/eliminar",[DeudasController::class,"eliminarDeuda"]);
 Route::post("deudas/actualizar",[DeudasController::class,"actualizarDeuda"]);
@@ -63,7 +63,7 @@ Route::post("trabajadores/actualizar",[TrabajadoresController::class,"actualizar
 
 //RUTAS USUARIOS
 Route::get("usuarios/get",[UsuariosController::class,"getUsuarios"]);
-// Route::get("usuarios/filtrar",[UsuariosController::class,"filtrarUsuarios"]);
+Route::get("usuarios/filtrar",[UsuariosController::class,"filtrarUsuarios"]);
 Route::get("usuarios/findByCodUsuario",[UsuariosController::class,"obtenerPorCodUsuario"]);
 Route::post("usuarios/post",[UsuariosController::class,"crearusuario"]);
 Route::post("usuarios/eliminar",[UsuariosController::class,"eliminarUsuario"]);

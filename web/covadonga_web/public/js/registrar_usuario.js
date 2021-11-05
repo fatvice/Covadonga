@@ -75,12 +75,24 @@ function clean (rut) {
       return checkDigit.toString()
     }
   }
+function mostrarContrasena(){
+  var tipo = document.getElementById("pass-txt");
+  if (tipo.type=='password'){
+    tipo.type="text";
+  }else{
+    tipo.type="password";
+  }
+}
 
+document.querySelector("#pass-btn").addEventListener("click",()=>{
+  mostrarContrasena();
+});
 
 document.querySelector("#registrar-btn").addEventListener("click", async()=>{
     let rut = document.querySelector("#rut-txt").value.trim();
     let nombre = document.querySelector("#nombre-txt").value.trim();
     let pass = document.querySelector("#pass-txt").value.trim();
+    let confirmPass = document.querySelector("#confirmpass-txt").value.trim();
     let estacionamiento = +document.querySelector("#estacionamiento-txt").value.trim();
     let bodega = +document.querySelector("#bodega-txt").value.trim();
     let moroso = document.querySelector("#moroso-no-rb").checked ? "0": "1";
@@ -96,6 +108,7 @@ document.querySelector("#registrar-btn").addEventListener("click", async()=>{
     if(nombre===""){
         errores.push("Debe ingresar un nombre");
     }
+    console.log(confirmPass);
     if(nombre.length>70){
         errores.push("El nombre debe tener menos de 70 caracteres");
     }
@@ -105,11 +118,14 @@ document.querySelector("#registrar-btn").addEventListener("click", async()=>{
     if(pass.length<4){
         errores.push("La contraseña debe tener al menos 4 caracteres");
     }
+    if(!(pass===confirmPass)){
+      errores.push("Las contraseñas deben coincidir");
+    }
     if(estacionamiento>70 || estacionamiento<0){
-        errores.push("Debe ingresar un estacionamiento valido menor a 70 y mayor a -1");
+        errores.push("Debe ingresar un estacionamiento valido menor a 71 y mayor a -1");
     }
     if(bodega>20 || bodega<0){
-        errores.push("Debe ingresar una bodega valida menor a 20 y mayor a -1");
+        errores.push("Debe ingresar una bodega valida menor a 21 y mayor a -1");
     }
     //TODO: verificacion de si un estacionamiento esta en uso o no
 
