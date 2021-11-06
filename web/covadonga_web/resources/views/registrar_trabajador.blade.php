@@ -1,5 +1,4 @@
 @extends('layouts.master')
-
 @section('contenido')
 <div class="row mt-5 mb-5">
     <div class="col-12 col-md-6 col-lg-5 mx-auto">

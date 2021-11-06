@@ -20,9 +20,9 @@ const eliminarUsuario=async(cod_usuario)=>{
     }
 };
 
-const actualizarUsuario=async(cod_usuario)=>{
+const actualizarUsuario=async(usuario)=>{
     try{
-        let resp = await axios.post("api/usuarios/actualizar",{cod_usuario},{
+        let resp = await axios.post("api/usuarios/actualizar",usuario,{
             headers:{
                 "Content-Type":"application/json"
             }
@@ -46,3 +46,15 @@ const obtenerPorCodUsuario = async (cod_usuario)=>{
     let resp = await axios.get(`api/usuarios/findByCodUsuario?cod_usuario=${cod_usuario}`);
     return resp.data;
 }
+const cambiarPassword = async(usuario)=>{
+    try{
+        let resp = await axios.post("api/usuarios/cambiarPassword",usuario,{
+            headers:{
+                "Content-Type":"application/json"
+            }
+        });
+        return resp.data=="ok";
+    }catch(e){
+        return false;
+    }
+};

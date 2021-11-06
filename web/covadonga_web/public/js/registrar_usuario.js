@@ -108,7 +108,6 @@ document.querySelector("#registrar-btn").addEventListener("click", async()=>{
     if(nombre===""){
         errores.push("Debe ingresar un nombre");
     }
-    console.log(confirmPass);
     if(nombre.length>70){
         errores.push("El nombre debe tener menos de 70 caracteres");
     }

@@ -39,10 +39,17 @@ class UsuariosController extends Controller
         $usuario=Usuario::findOrFail($cod_usuario);        
         $usuario->nombre=$input["nombre"];
         $usuario->rut=$input["rut"];
-        $usuario->password=$input["password"];
         $usuario->estacionamiento=$input["estacionamiento"];
         $usuario->bodega=$input["bodega"];
         $usuario->moroso=$input["moroso"];
+        $usuario->save();
+        return "ok";
+    }
+    public function cambiarPassword(Request $request){
+        $input=$request->all();
+        $cod_usuario=$input["cod_usuario"];
+        $usuario=Usuario::findOrFail($cod_usuario);
+        $usuario->password=$input["password"];
         $usuario->save();
         return "ok";
     }

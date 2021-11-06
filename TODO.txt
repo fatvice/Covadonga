@@ -1,3 +1,4 @@
 Hacer confirmación de contraseña
 Ver los fondos de eventos
 Hacer filtros para ver_trabajadores y ver_usuarios
+Hacer funcionar el boton de mostrar contraseña al realizar el cambio de esta (ver_usuarios)

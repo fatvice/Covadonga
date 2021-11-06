@@ -68,3 +68,4 @@ Route::get("usuarios/findByCodUsuario",[UsuariosController::class,"obtenerPorCod
 Route::post("usuarios/post",[UsuariosController::class,"crearusuario"]);
 Route::post("usuarios/eliminar",[UsuariosController::class,"eliminarUsuario"]);
 Route::post("usuarios/actualizar",[UsuariosController::class,"actualizarUsuario"]);
+Route::post("usuarios/cambiarPassword",[UsuariosController::class,"cambiarPassword"]);
