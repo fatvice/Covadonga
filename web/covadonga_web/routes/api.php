@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DepartamentosController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DeudasController;
@@ -69,3 +70,8 @@ Route::post("usuarios/post",[UsuariosController::class,"crearusuario"]);
 Route::post("usuarios/eliminar",[UsuariosController::class,"eliminarUsuario"]);
 Route::post("usuarios/actualizar",[UsuariosController::class,"actualizarUsuario"]);
 Route::post("usuarios/cambiarPassword",[UsuariosController::class,"cambiarPassword"]);
+
+//RUTAS DEPARTAMENTOS
+Route::get("departamentos/get",[DepartamentosController::class,'getDepartamentos']);
+Route::get("departamentos/filtrar",[DepartamentosController::class, 'filtrarDepartamentos']);
+Route::post("departamentos/actualizar",[DepartamentosController::class,'actualizarEstadoDepartamenmto']);

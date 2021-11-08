@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view("/","home")->name('home');
+Route::view("/departamentos","departamentos")->name('departamentos');
 Route::view("/admin","admin")->name("admin");
 Route::view("/registrarpagosydeudas","registrar_pago_deuda")->name("registrar_pago_deuda");
 Route::view("/registrarreclamosysugerencias","registrar_reclamo_sugerencia")->name("registrar_reclamo_sugerencia");

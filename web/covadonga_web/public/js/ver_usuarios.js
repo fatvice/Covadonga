@@ -291,7 +291,7 @@ document.querySelector("#filtro-cbx").addEventListener("change", async () => {
 })
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await cargarMorosos();
+  cargarMorosos();
   let usuarios = await getUsuarios();
   cargarTabla(usuarios);
 })

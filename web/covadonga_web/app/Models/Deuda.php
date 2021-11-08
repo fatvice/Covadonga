@@ -12,5 +12,5 @@ class Deuda extends Model
     public function usuario(){
         return $this->belongsTo("App\Models\Usuario", "cod_usuario");
     }
-    public $table="pagos";
+    public $table="deudas";
 }

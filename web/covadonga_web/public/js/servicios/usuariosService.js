@@ -38,7 +38,7 @@ const getUsuarios=async(filtro="todos")=>{
     if (filtro=="todos"){
         resp=await axios.get("api/usuarios/get");
     }else{
-        resp= await axios.get(`api/usuarios/filtrar?filtro=${filtro}`)
+        resp= await axios.get(`api/usuarios/filtrar?filtro=${filtro}`);
     }
     return resp.data;
 }
